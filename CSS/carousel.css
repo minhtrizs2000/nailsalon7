@@ -1,0 +1,21 @@
+/* CAROUSEL STYLING */
+
+#carouselExampleCaptions .carousel-control-next, #carouselExampleCaptions .carousel-control-prev{
+    align-items: end;
+    padding-bottom: 25px;
+}
+
+#carouselExampleCaptions .carousel-caption{
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(29,14,0,0.3);
+    color: #ffffff;
+    font-size: 38px;
+}
+
+#carouselExampleCaptions .carousel-item .carousel-caption .highlight{
+    text-transform: uppercase;
+    color: #ffae00;
+}

@@ -1,0 +1,209 @@
+body {
+    background: url(../IMGs/section-bg.jpg) repeat left top;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+body a{
+    text-decoration: none;
+    color: #000000;
+}
+.section-title {
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 60px;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+/* OUR SERVICES */
+#ourServices {
+    padding: 100px 0;
+}
+#ourServices .btn.my-btn {
+    background-color: #333339;
+    color: #ffffff;
+    border-radius: 0%;
+}
+#ourServices .btn.my-btn:hover {
+    background-color: #ffae00;
+}
+#ourServices .card {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ebe3d0;
+}
+
+#ourServices .card .card-body {
+    background-color: #ebe3d0;
+    color: #2e2e2e;
+    text-align: center;
+    padding: 20px 0%;
+}
+
+/* OUR SPECIALTIES */
+#ourSpecialties {
+    background-image: url(../IMGs/section-bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#ourSpecialties .card {
+    background: transparent;
+    color: #ffffff;
+}
+#ourSpecialties .card .img-overlay{
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+#ourSpecialties .card .img-overlay::after{
+    content: "";
+    display: none;
+    width: 224px;
+    height: 224px;
+    background-color: #d18b00;
+    opacity: 0.3;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+}
+#ourSpecialties .card h3{
+    text-align: center;
+    font-size: 22px;
+    margin: 25px 0;
+}
+#ourSpecialties .card a{
+    color: #ffffff;
+}
+#ourSpecialties .card img{
+    border-radius: 50%;
+}
+#ourSpecialties .card:hover a{
+    color: #d18b00;
+}
+#ourSpecialties .card:hover .img-overlay::after{
+    display: block;
+}
+
+#clientTestimonials {
+    padding: 50px 0;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#clientTestimonials .carousel-inner{
+    background-color: #0d0900;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+#clientTestimonials .carousel-inner .carousel-item .text{
+    color: #d18b00;
+}
+
+#clientTestimonials button{
+    background-color: #0d0900;
+    width: 56px;
+    height: 56px;
+    top: 40%;
+    border-radius: 50%;
+}
+#clientTestimonials button.carousel-control-next{
+    right: 8%;
+}
+#clientTestimonials button.carousel-control-prev{
+    left: 8%;
+}
+
+
+
+#my_footer .followUs .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#my_footer .followUs .social-icons a{
+    color: #000000;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#my_footer .followUs .social-icons a:hover{
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    background-color: #d18b00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my_footer .copyright{
+    padding: 20px 0;
+}
+#my_footer .copyright .menu ul li.menu-item{
+    color: #ffffff;
+    background-color: transparent;
+    border-right: 1px solid #FFFFFF;
+    padding: 0 10px;
+    margin: 5px;
+}
+#my_footer .copyright .menu ul li.menu-item.active{
+    border: none;
+    border-right: 1px solid #ffae00;
+}
+#my_footer .copyright .menu ul li.menu-item.active a{
+    color: #ffae00;
+}
+#my_footer .copyright .menu ul li.menu-item:hover a{
+    color: #ffae00;
+}
+#my_footer .copyright .menu ul li.menu-item:hover{
+    border-right: 1px solid #ffae00;
+}
+#my_footer .copyright .menu ul li.menu-item a{
+    color: #ffffff;
+    font-size: 12px;
+}
+#my_footer .copyright .copyright-item{
+    color: #ffffff;
+    font-size: 12px;
+}
+#my_footer .copyright .copyright-item a{
+    color: #ffae00;
+}
+#my_footer .copyright .copyright-item a:hover{
+    color: #ffffff;
+}

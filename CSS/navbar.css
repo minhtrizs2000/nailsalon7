@@ -1,0 +1,43 @@
+/* NAVBAR STYLING */
+
+#my_navbar {
+    padding-top: 0;
+}
+#my_navbar .contact{
+    background-color: rgba(20,16,0,0.3);
+    padding: 10px 10px 15px;
+}
+#my_navbar .contact .contact-item {
+    margin-left: 25px;
+}
+#my_navbar .contact .contact-item a{
+    color: #ffffff;
+}
+#my_navbar .contact .contact-item i{
+    color: #ffffff;
+}
+
+#my_navbar.navbar-dark .navbar-nav .nav-link.active, 
+#my_navbar.navbar-dark .navbar-nav .show>.nav-link,
+#my_navbar.navbar-dark .navbar-nav .nav-link:focus, 
+#my_navbar.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffae00;
+}
+#my_navbar.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+button.navbar-toggler{
+    background-color: #ffae00;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+button.navbar-toggler span{
+    margin: 10px;
+    color: #ffffff;
+}
