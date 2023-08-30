@@ -2,6 +2,7 @@
 
 #my_navbar {
     padding-top: 0;
+    position: relative;
 }
 #my_navbar .contact{
     background-color: rgba(20,16,0,0.3);
@@ -40,4 +41,10 @@ button.navbar-toggler{
 button.navbar-toggler span{
     margin: 10px;
     color: #ffffff;
+}
+
+@media screen and (min-width: 800px) {
+    #my_navbar {
+        position: absolute;
+    }
 }

@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/index.css" />
     <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/calendar.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -52,7 +53,7 @@
                             <a class="nav-link" href="../HTML/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../HTML/aboutUs.html">About Us</a>
+                            <a class="nav-link" href="../HTML/aboutUs.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../HTML/waxing.html">Waxing</a>
@@ -67,7 +68,7 @@
                             <a class="nav-link" href="../HTML/massage.html">Massage</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../HTML/make-an-appointment.html">Make An Appointment</a>
+                            <a class="nav-link active" href="../HTML/make-an-appointment.html">Make An Appointment</a>
                         </li>
                     </ul>
                 </div>
@@ -85,34 +86,101 @@
     </section>
     <!-- banner -->
 
-    <!-- section about us -->
-    <section id="about_us">
+    <!-- section apointment -->
+    <section id="apointment">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <div class="about-us-content">
-                        <h2 class="section-title section-title-2">About Us</h2>
-                        <p>
-                            Nail salon was founded back in 2008. Tired of working in the traditional nail salons, she
-                            decided to venture off on her own. Our mission at nail spas is to create a delightful
-                            retreat from the pressing worries of the modern world. Embodying our own signature blend of
-                            natural and organic ingredients. At Nouvelle, each guest is an individual, and each
-                            treatment, a highly personal affair. Our technicians are constantly attuned, sensitive and
-                            responsive to your every need. Under their intuitive touch, simple sensory pleasures are
-                            reawakened, completing the experience that defines Nouvelle. We’d like to think, having a
-                            perfect manicure can also make you feel like your best self.
-                        </p>
-                        <p>
-                            When visiting nail and spas, you can rest at ease when receiving a treatment. Proper
-                            sanitation is the utmost importance. You’ll no longer have to be afraid and second guess on
-                            cleanliness. All metal implements are sterilized in a hospital grade AUTOCLAVE for a minimum
-                            20 min. and then sealed in a pouch until next use. You may choose to take the hand file,
-                            buffer, and orange wood stick home or you may also choose to purchase your own personal
-                            metal implements here at Nouvelle.
-                        </p>
+                    <div class="apointment-content">
+                        <h2 class="section-title section-title-2">MAKE AN APPOINTMENT</h2>
+
+                        <!-- date picker -->
+                        <div class="datepicker">
+                            <div class="datepicker-top">
+                                <div class="btn-group">
+                                    <button class="tag">Today</button>
+                                    <button class="tag">Tomorrow</button>
+                                    <button class="tag">In 2 days</button>
+                                </div>
+                                <div class="month-selector">
+                                    <button class="arrow"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                                    <span class="month-name">December 2020</span>
+                                    <button class="arrow"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="datepicker-calendar">
+                                <span class="day">Mo</span>
+                                <span class="day">Tu</span>
+                                <span class="day">We</span>
+                                <span class="day">Th</span>
+                                <span class="day">Fr</span>
+                                <span class="day">Sa</span>
+                                <span class="day">Su</span>
+                                <button class="date faded">30</button>
+                                <button class="date">1</button>
+                                <button class="date">2</button>
+                                <button class="date">3</button>
+                                <button class="date">4</button>
+                                <button class="date">5</button>
+                                <button class="date">6</button>
+                                <button class="date">7</button>
+                                <button class="date">8</button>
+                                <button class="date current-day">9</button>
+                                <button class="date">10</button>
+                                <button class="date">11</button>
+                                <button class="date">12</button>
+                                <button class="date">13</button>
+                                <button class="date">14</button>
+                                <button class="date">15</button>
+                                <button class="date">16</button>
+                                <button class="date">17</button>
+                                <button class="date">18</button>
+                                <button class="date">19</button>
+                                <button class="date">20</button>
+                                <button class="date">21</button>
+                                <button class="date">22</button>
+                                <button class="date">23</button>
+                                <button class="date">24</button>
+                                <button class="date">25</button>
+                                <button class="date">26</button>
+                                <button class="date">27</button>
+                                <button class="date">28</button>
+                                <button class="date">29</button>
+                                <button class="date">30</button>
+                                <button class="date">31</button>
+                                <button class="date faded">1</button>
+                                <button class="date faded">2</button>
+                                <button class="date faded">3</button>
+                            </div>
+                        </div>
+                        <!-- date picker -->
+
+                        <form class="w-100 my-5">
+                            <div class="mb-3">
+                                <label for="fName" class="form-label">First Name:</label>
+                                <input type="text" class="form-control" id="fName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="lName" class="form-label">Last Name:</label>
+                                <input type="text" class="form-control" id="lName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone:</label>
+                                <input type="number" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="detail" class="form-label">Detail:</label>
+                                <textarea rows="3" name="detail" id="detail" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-light">Submit</button>
+                        </form>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 m-0 m-md-5">
+                <div class="col-12 col-lg-3 m-0 m-md-5">
                     <h2 class="form-title">Contact Form</h2>
                     <form class="contact-form">
                         <div class="mb-3">
@@ -143,8 +211,7 @@
             </div>
         </div>
     </section>
-    <!-- section about us -->
-
+    <!-- section apointment -->
 
     <!-- Footer -->
     <footer id="my_footer">
@@ -175,7 +242,7 @@
                         <li class="list-group-item menu-item">
                             <a href="../HTML/index.html">Home</a>
                         </li>
-                        <li class="list-group-item menu-item active">
+                        <li class="list-group-item menu-item">
                             <a href="../HTML/aboutUs.html">About Us</a>
                         </li>
                         <li class="list-group-item menu-item">
@@ -187,7 +254,7 @@
                         <li class="list-group-item menu-item">
                             <a href="../HTML/foot-massage.html">Foot Massage</a>
                         </li>
-                        <li class="list-group-item menu-item">
+                        <li class="list-group-item menu-item active">
                             <a href="../HTML/make-an-appointment.html">Make An Appointment</a>
                         </li>
                         <li class="list-group-item menu-item">
